@@ -1,11 +1,11 @@
-module.exports.favoriteNumber = function(guessNumber, favoriteNumber) {
-  if (guessNumber > favoriteNumber) {
+module.exports.favoriteNumber = function(favoriteNumber, guessNumber) {
+  if (favoriteNumber > guessNumber) {
     return "Too low";
   }
-  else if (guessNumber < favoriteNumber) {
+  else if (favoriteNumber < guessNumber) {
     return "Too high";
   }
-  else if (guessNumber == favoriteNumber) {
+  else if (favoriteNumber == guessNumber) {
     return "You got it!";
   }
 };
